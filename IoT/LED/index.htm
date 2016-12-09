@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<title>BOLT</title>
+</head>
+<script type="text/javascript">
+function flicker() {
+	for(var i=0;i<5;i++)
+	{
+	document.getElementById("onbtn").click();
+	document.getElementById("offbtn").click();
+	//setInterval(flicker, 1000);
+	}
+}
+</script>
+<body> 
+<center> 
+<h3> LED Controller</h3> <br> 
+<button id="onbtn"><a href="digitalWrite?pin=0&state=HIGH">LED ON</a></button><br><br> 
+<button id="offbtn"><a href="digitalWrite?pin=0&state=LOW">LED OFF</a></button> 
+<button id="btn2">FLICKER
+</button>
+</center> 
+</body> 
+</html>
