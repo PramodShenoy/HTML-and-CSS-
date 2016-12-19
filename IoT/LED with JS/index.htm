@@ -1,0 +1,20 @@
+<!doctype html> 
+<html> 
+<head> 
+<title>BOLT</title> 
+<script type="text/javascript" src="/serveFile?filename=bolt.js"> setDebug(true); 
+function flicker() {
+	digitalWrite(4,HIGH);
+}
+</script> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head> 
+<body> 
+<center> 
+<h3> LED Controller</h3> <br> 
+<button onclick="flicker();">flicker</button> 
+<button onclick="digitalWrite(5,HIGH);">ON</button> 
+<button onclick="digitalWrite(5,LOW);">OFF</button> 
+</center> 
+</body> 
+</html> 
